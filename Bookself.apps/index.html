@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link css -->
+    <link rel="stylesheet" href="../Bookself.apps/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bookshelf Apps</h1>
+    </header>
+
+    <div class="wrapper">
+      <div class="container shadow">
+        <h2 class="heading-text text-center">Masukkan Buku Baru</h2>
+        <form class="form" action="#" id="form-book">
+          <div class="form-group form-title">
+            <label for="title" class="text-center label">Judul Buku</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div class="form-group form-title">
+            <label for="penulis" class="text-center label">Penulis</label>
+            <input type="text" id="penulis" name="penulis" required />
+          </div>
+          <div class="form-group form-title">
+            <label for="number" class="text-center label">Tahun Terbit</label>
+            <input type="number" id="number" name="number" required />
+          </div>
+
+          <input
+            type="submit"
+            value="Submit"
+            name="Submit"
+            class="btn-submit"
+          />
+        </form>
+      </div>
+      <div class="container shadow flex-column">
+        <h2 class="heading-text">Belum Selesai Dibaca</h2>
+        <div class="list-item" id="not-read"></div>
+      </div>
+      <div class="container shadow flex-column">
+        <h2 class="heading-text">Selesai Dibaca</h2>
+        <div class="list-item" id="finish-read"></div>
+      </div>
+    </div>
+
+    <!-- Javascript SCript -->
+    <script src="../Bookself.apps/js/script.js"></script>
+    <script src="../Bookself.apps/js/main.js"></script>
+  </body>
+</html>
